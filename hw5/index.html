@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="uk">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Реєстрація користувача</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<main>
+			<h1>Реєстрація користувача</h1>
+
+			<form>
+				<label>Ім’я:</label>
+				<input type="text" name="name" required /><br /><br />
+
+				<label>Email:</label>
+				<input type="email" name="email" required /><br /><br />
+
+				<label>Пароль:</label>
+				<input type="password" name="password" required /><br /><br />
+
+				<label>Підтвердження пароля:</label>
+				<input type="password" name="confirm" required /><br /><br />
+
+				<label>Вік:</label>
+				<input type="number" name="age" min="1" max="120" /><br /><br />
+
+				<label>Стать:</label><br />
+				<input type="radio" name="gender" value="чоловік" /> Чоловік<br />
+				<input type="radio" name="gender" value="жінка" /> Жінка<br /><br />
+
+				<input type="checkbox" name="terms" required /> Приймаю умови<br /><br />
+
+				<button type="submit">Зареєструватися</button>
+			</form>
+		</main>
+		
+	</body>
+</html>

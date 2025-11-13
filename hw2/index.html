@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="uk">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Моя сторінка</title>
+		<style>
+			/* Селектор по тегу */
+			h1 {
+				color: darkblue; /* колір за назвою */
+			}
+
+			/* Селектор по класу */
+			.about p {
+				color: #333333; /* HEX-колір */
+			}
+
+			/* Селектор по id */
+			#contacts {
+				background-color: rgb(200, 230, 255); /* RGB-колір */
+				padding: 15px;
+				border-radius: 10px;
+			}
+
+			ul li {
+				margin-bottom: 5px;
+			}
+
+			a {
+				text-decoration: none;
+				color: darkred;
+			}
+
+			a:hover {
+				text-decoration: underline;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1>Мохна Артем</h1>
+			<img
+				src="https://i.pinimg.com/736x/11/7e/be/117ebe43697bc3611e06daa0c4d38eb6.jpg"
+				alt="Кличком"
+				width="200"
+			/>
+		</header>
+
+		<main>
+			<section class="about">
+				<h2>Про мене</h2>
+				<p>САЙТ ПРО ВІТАЛІЯ КЛИЧКА!!!!!!!.</p>
+				<p>ВІН БОКСЕР!!!!,МЕР!!!,НАРОДНИЙ ДЕПУТАТ!!!,МЕМНИЙ ЧЕЛІК.</p>
+			</section>
+
+			<section>
+				<h2>ЛЮЬИТЬ БОКС І БУТИ ДЕПУТАТОМ</h2>
+				<ul>
+					<li>1,2,22 І ЗАЙМАТИСЯ БОКСОМ!!!!</li>
+				</ul>
+			</section>
+
+			<section id="contacts">
+				<h2>Контакти</h2>
+				<p>Email: <a href="kakkaaosos@gmail.com">kakkaaosos@gmail.com</a></p>
+				<p>соц мережі ВІТАЛІЯ КЛИЧКА!!!:</p>
+				<ul>
+					<li>
+						<a href="https://www.facebook.com/Vitaliy.Klychko/" target="_blank"
+							>Facebook</a
+						>
+					</li>
+					<li>
+						<a
+							href="https://www.instagram.com/vitaliyklitschko?igsh=c2VoeDFjemkxMTB1"
+							target="_blank"
+							>Instagram</a
+						>
+					</li>
+					<li>
+						<a
+							href="https://uk.wikipedia.org/wiki/%D0%9A%D0%BB%D0%B8%D1%87%D0%BA%D0%BE_%D0%92%D1%96%D1%82%D0%B0%D0%BB%D1%96%D0%B9_%D0%92%D0%BE%D0%BB%D0%BE%D0%B4%D0%B8%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B8%D1%87"
+							target="_blank"
+							>LinkedIn</a
+						>
+					</li>
+				</ul>
+
+				<h3>Напишіть мені</h3>
+				<form>
+					<label for="name">КЛИЧКО:</label><br />
+					<input type="text" id="name" name="name" /><br /><br />
+					<label for="message">Повідомлення:</label><br />
+					<textarea id="message" name="message" rows="4" cols="30"></textarea
+					><br /><br />
+					<input type="submit" value="Відправити" />
+				</form>
+			</section>
+		</main>
+
+		<footer>
+			<p>© 2025 ВІТАЛІЙ КЛИЧКО. Всі права захищено.</p>
+			<table border="1">
+				<tr>
+					<th>11</th>
+					<th>ПЕРШИЙ ВИХІД НА РИНГ!! ВІТАЛІЯ КЛИЧКА!!!</th>
+				</tr>
+				<tr>
+					<td>Жовтень</td>
+					<td>21.10.2025</td>
+				</tr>
+				<tr>
+					<td>Жовтня</td>
+					<td>intita</td>
+				</tr>
+			</table>
+		</footer>
+	</body>
+</html>

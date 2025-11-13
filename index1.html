@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="uk">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Pocoyo — Веселий світ Web-програмування</title>
+		<style>
+			body {
+				margin: 0;
+				font-family: 'Poppins', sans-serif;
+				background: linear-gradient(to bottom, #9eeaff 0%, #ffffff 100%);
+				overflow-x: hidden;
+			}
+
+			header {
+				position: relative;
+				background: #4cc2ff;
+				color: white;
+				text-align: center;
+				padding: 40px 20px 100px;
+				border-radius: 0 0 50px 50px;
+				box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+			}
+
+			header h1 {
+				font-size: 2.5em;
+				margin: 0;
+			}
+
+			header h2 {
+				font-weight: normal;
+				margin: 10px 0;
+			}
+
+		
+			.pocoyo {
+				position: absolute;
+				bottom: -20px;
+				right: 50px;
+				width: 150px;
+				transition: transform 0.3s ease;
+			}
+
+			
+			.eyes {
+				position: absolute;
+				top: 58px;
+				right: 97px;
+				width: 23px;
+				height: 10px;
+				display: flex;
+				justify-content: space-between;
+			}
+
+			.eye {
+				width: 8px;
+				height: 8px;
+				background: white;
+				border-radius: 50%;
+				border: 1px solid #000;
+				overflow: hidden;
+				position: relative;
+			}
+
+			.pupil {
+				width: 5px;
+				height: 5px;
+				background: black;
+				border-radius: 50%;
+				position: absolute;
+				top: 1px;
+				left: 1px;
+				transition: all 0.1s ease;
+			}
+
+			.cloud {
+				position: absolute;
+				top: 30px;
+				opacity: 0.6;
+				animation: cloudMove 35s linear infinite;
+			}
+
+			.cloud:nth-child(1) {
+				width: 140px;
+				left: -200px;
+				top: 60px;
+				animation-delay: 0s;
+			}
+			.cloud:nth-child(2) {
+				width: 180px;
+				left: -300px;
+				top: 100px;
+				animation-delay: 7s;
+			}
+			.cloud:nth-child(3) {
+				width: 100px;
+				left: -150px;
+				top: 40px;
+				animation-delay: 14s;
+			}
+
+			@keyframes cloudMove {
+				0% {
+					left: -250px;
+				}
+				100% {
+					left: 110%;
+				}
+			}
+
+			main {
+				width: 80%;
+				max-width: 900px;
+				background: white;
+				margin: 60px auto;
+				padding: 30px;
+				border-radius: 30px;
+				box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+				animation: fadeIn 1.2s ease;
+			}
+
+			@keyframes fadeIn {
+				from {
+					opacity: 0;
+					transform: translateY(40px);
+				}
+				to {
+					opacity: 1;
+					transform: translateY(0);
+				}
+			}
+
+			h3 {
+				background: #ffd84a;
+				padding: 8px 18px;
+				border-radius: 20px;
+				display: inline-block;
+				box-shadow: 2px 3px 0 #caa600;
+			}
+
+			table {
+				width: 100%;
+				border-collapse: collapse;
+				margin: 20px 0;
+			}
+
+			th,
+			td {
+				padding: 10px;
+				border: 2px solid #bfe9ff;
+				text-align: left;
+			}
+
+			th {
+				background: #4cc2ff;
+				color: white;
+			}
+
+			tr:nth-child(even) {
+				background: #e9faff;
+			}
+
+			footer {
+				background: #dff8ff;
+				text-align: center;
+				padding: 20px;
+				border-top: 3px solid #aee0ff;
+			}
+
+			footer p {
+				margin: 10px 0 0;
+				color: #007acc;
+			}
+		</style>
+	</head>
+	<body>
+		<img src="https://pngimg.com/uploads/cloud/cloud_PNG27.png" class="cloud" />
+		<img src="https://pngimg.com/uploads/cloud/cloud_PNG27.png" class="cloud" />
+		<img src="https://pngimg.com/uploads/cloud/cloud_PNG27.png" class="cloud" />
+
+		<header>
+			<h1>Технології Web-програмування</h1>
+			<h2>Студент: Мохна Артем</h2>
+
+			<img
+				src="https://www.youtube.com/channel/UCjr7cl_KlnR-l1IOBOiqnBQ/channels"
+				class="pocoyo"
+				id="pocoyo"
+			/>
+			<div class="eyes">
+				<div class="eye"><div class="pupil" id="pupilL"></div></div>
+				<div class="eye"><div class="pupil" id="pupilR"></div></div>
+			</div>
+		</header>
+
+		<main>
+			<h3>HTML/CSS</h3>
+			<table>
+				<tr>
+					<th>№</th>
+					<th>Тема</th>
+					<th>Посилання</th>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>Основи HTML</td>
+					<td><a href="hw1/index.html">Відкрити</a></td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>CSS стилізація</td>
+					<td><a href="hw2/index.html">Відкрити</a></td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>CSS селектори, кольори, шрифти</td>
+					<td><a href="hw3/index.html">Відкрити</a></td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td>CSS селектори, кольори, шрифти</td>
+					<td><a href="hw4/index.html">Відкрити</a></td>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td>HTML таблиці</td>
+					<td><a href="hw5/index.html">Відкрити</a></td>
+				</tr>
+			</table>
+
+			<h3>JavaScript</h3>
+			<table>
+				<tr>
+					<th>№</th>
+					<th>Тема</th>
+					<th>Посилання</th>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>Основи JS</td>
+					<td><a href="#">Відкрити</a></td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>DOM</td>
+					<td><a href="#">Відкрити</a></td>
+				</tr>
+			</table>
+		</main>
+
+		<footer>
+			<p>Pocoyo спостерігає за тобою</p>
+		</footer>
+
+		<script>
+			const pupilL = document.getElementById('pupilL')
+			const pupilR = document.getElementById('pupilR')
+			const pocoyo = document.getElementById('pocoyo')
+
+			document.addEventListener('mousemove', e => {
+				const x = e.clientX / window.innerWidth
+				const y = e.clientY / window.innerHeight
+				const moveX = (x - 0.5) * 8
+				const moveY = (y - 0.5) * 8
+
+				pupilL.style.transform = `translate(${moveX}px, ${moveY}px)`
+				pupilR.style.transform = `translate(${moveX}px, ${moveY}px)`
+
+				// Pocoyo трохи нахиляється
+				pocoyo.style.transform = `translateX(${
+					moveX * 3
+				}px) rotate(${moveX}deg)`
+			})
+		</script>
+	</body>
+</html>
