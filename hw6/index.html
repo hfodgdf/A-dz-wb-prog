@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="uk">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>WEB-програмування — Мохна Артем</title>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<header class="mb-4">
+			<nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm">
+				<div class="container-fluid">
+					<a class="navbar-brand fw-bold" href="#">Мій сайт</a>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarNav"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarNav">
+						<ul class="navbar-nav ms-auto">
+							<li class="nav-item">
+								<a class="nav-link active" href="#">Головна</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#carouselExampleAutoplaying"
+									>Карусель</a
+								>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#accordionFlushExample">Акордеон</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#cardsBlock">Картки</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+		<main class="container">
+			<!-- Carousel -->
+			<div
+				id="carouselExampleAutoplaying"
+				class="carousel slide mb-5"
+				data-bs-ride="carousel"
+			>
+				<div class="carousel-inner rounded shadow">
+					<div class="carousel-item active text-center">
+						<img
+							src="https://i.pinimg.com/736x/7b/f6/e2/7bf6e2df8a7a569c85f42c365b01d4f4.jpg"
+							class="d-block mx-auto w-100"
+							alt="..."
+							style="max-height: 700px; object-fit: cover"
+						/>
+					</div>
+					<div class="carousel-item text-center">
+						<img
+							src="https://i.pinimg.com/736x/68/23/67/682367de9592bbbca39f0c2d55a827ec.jpg"
+							class="d-block mx-auto w-100"
+							alt="..."
+							style="max-height: 700px; object-fit: cover"
+						/>
+					</div>
+					<div class="carousel-item text-center">
+						<img
+							src="https://i.pinimg.com/736x/ed/3f/11/ed3f11bed99fb2c2284dd3ac74e8238c.jpg"
+							class="d-block mx-auto w-100"
+							alt="..."
+							style="max-height: 800px; object-fit: cover"
+						/>
+					</div>
+				</div>
+				<button
+					class="carousel-control-prev"
+					type="button"
+					data-bs-target="#carouselExampleAutoplaying"
+					data-bs-slide="prev"
+				>
+					<span class="carousel-control-prev-icon"></span>
+				</button>
+				<button
+					class="carousel-control-next"
+					type="button"
+					data-bs-target="#carouselExampleAutoplaying"
+					data-bs-slide="next"
+				>
+					<span class="carousel-control-next-icon"></span>
+				</button>
+			</div>
+
+			<!-- Accordion -->
+			<div class="accordion accordion-flush mb-5" id="accordionFlushExample">
+				<div class="accordion-item">
+					<h2 class="accordion-header">
+						<button
+							class="accordion-button collapsed"
+							type="button"
+							data-bs-toggle="collapse"
+							data-bs-target="#flush-collapseOne"
+						>
+							accordion 1
+						</button>
+					</h2>
+					<div
+						id="flush-collapseOne"
+						class="accordion-collapse collapse"
+						data-bs-parent="#accordionFlushExample"
+					>
+						<div class="accordion-body">Тут ваш текст або інформація.</div>
+					</div>
+				</div>
+
+				<div class="accordion-item">
+					<h2 class="accordion-header">
+						<button
+							class="accordion-button collapsed"
+							type="button"
+							data-bs-toggle="collapse"
+							data-bs-target="#flush-collapseTwo"
+						>
+							accordion 2
+						</button>
+					</h2>
+					<div
+						id="flush-collapseTwo"
+						class="accordion-collapse collapse"
+						data-bs-parent="#accordionFlushExample"
+					>
+						<div class="accordion-body">Більше місця для вмісту.</div>
+					</div>
+				</div>
+
+				<div class="accordion-item">
+					<h2 class="accordion-header">
+						<button
+							class="accordion-button collapsed"
+							type="button"
+							data-bs-toggle="collapse"
+							data-bs-target="#flush-collapseThree"
+						>
+							accordion 3
+						</button>
+					</h2>
+					<div
+						id="flush-collapseThree"
+						class="accordion-collapse collapse"
+						data-bs-parent="#accordionFlushExample"
+					>
+						<div class="accordion-body">Ще один розділ контенту.</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Cards -->
+			<div class="container text-center mb-5" id="cardsBlock">
+				<div class="row g-4">
+					<div class="col-md-4">
+						<div class="card shadow-sm">
+							<img
+								src="https://placehold.co/300x200"
+								class="card-img-top"
+								alt=""
+							/>
+							<div class="card-body">
+								<h5 class="card-title">Заголовок картки</h5>
+								<p class="card-text">Опис картки з прикладом тексту.</p>
+								<a href="#" class="btn btn-primary">Дізнатись більше</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="card shadow-sm">
+							<img
+								src="https://www.gumor.org/img/10/2005/2226110/i2/%D0%A4%D0%BE%D1%82%D0%BE_%D0%BF%D1%80%D0%B8%D0%BA%D0%BE%D0%BB_%D0%BF%D1%80%D0%BE_%D0%BC%D0%B0%D0%B2%D0%BF_%D1%82%D0%B0_%D0%BA%D0%B2%D1%96%D1%82%D0%B8.jpg"
+								class="card-img-top"
+								alt=""
+							/>
+							<div class="card-body">
+								<h5 class="card-title">Заголовок картки</h5>
+								<p class="card-text">Опис картки з прикладом тексту.</p>
+								<a href="#" class="btn btn-primary">Дізнатись більше</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="card shadow-sm">
+							<img
+								src="https://placehold.co/300x200"
+								class="card-img-top"
+								alt=""
+							/>
+							<div class="card-body">
+								<h5 class="card-title">Заголовок картки</h5>
+								<p class="card-text">Опис картки з прикладом тексту.</p>
+								<a href="#" class="btn btn-primary">Дізнатись більше</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Second row -->
+				<div class="row g-4 mt-2">
+					<div class="col-md-4">
+						<div class="card shadow-sm">
+							<img
+								src="https://placehold.co/300x200"
+								class="card-img-top"
+								alt=""
+							/>
+							<div class="card-body">
+								<h5 class="card-title">Заголовок картки</h5>
+								<p class="card-text">Опис картки.</p>
+								<a href="#" class="btn btn-primary">Дізнатись більше</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="card shadow-sm">
+							<img
+								src="https://placehold.co/300x200"
+								class="card-img-top"
+								alt=""
+							/>
+							<div class="card-body">
+								<h5 class="card-title">Заголовок картки</h5>
+								<p class="card-text">Опис картки.</p>
+								<a href="#" class="btn btn-primary">Дізнатись більше</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="card shadow-sm">
+							<img
+								src="https://placehold.co/300x200"
+								class="card-img-top"
+								alt=""
+							/>
+							<div class="card-body">
+								<h5 class="card-title">Заголовок картки</h5>
+								<p class="card-text">Опис картки.</p>
+								<a href="#" class="btn btn-primary">Дізнатись більше</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Form -->
+			<form class="mb-5 p-4 shadow-sm rounded bg-light">
+				<h4 class="mb-3">Форма зворотного зв'язку</h4>
+				<div class="mb-3">
+					<label for="email" class="form-label">Email</label>
+					<input
+						type="email"
+						id="email"
+						class="form-control"
+						placeholder="name@example.com"
+					/>
+				</div>
+				<div class="mb-3">
+					<label for="textarea" class="form-label">Повідомлення</label>
+					<textarea id="textarea" rows="3" class="form-control"></textarea>
+				</div>
+				<button class="btn btn-success">Відправити</button>
+			</form>
+		</main>
+
+		<footer class="bg-dark text-white text-center py-3 mt-4">
+			© 2025 Мохна Артем.
+		</footer>
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+	</body>
+</html>
